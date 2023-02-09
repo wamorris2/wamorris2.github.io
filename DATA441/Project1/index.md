@@ -96,5 +96,4 @@ def lowess(x, y, kern, tau=0.05):
 ```
 
 ## **Testing**
-To test a lowess regression
 <!--  -->
