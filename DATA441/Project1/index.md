@@ -11,18 +11,9 @@ Locally weighted regression equation:
 $$\large \text{diag}(W(i))y = \text{diag}(W(i))X\cdot\beta +\sigma \text{diag}(W(i))\epsilon $$
 
 Lowess animation from the scikit-lego documentation:
-<figure>
-<center>
-<img src='https://drive.google.com/uc?id=1bQmo-j35etyEWt7Ce8TSo01YSOhZQBeY'width='800px'/>
-<figcaption>Example of how weights work</figcaption></center>
-</figure>
+![Example of how weights work](./images/lowess-rolling.gif)
 
-
-<figure>
-<center>
-<img src='https://drive.google.com/uc?id=19cIIGCSePtJbGVgRT6uWhcV2tNJKe9WG'width='800px'/>
-<figcaption>Example of how locally weighted regression works</figcaption></center>
-</figure>
+![Example of how locally weighted regression works](images/lowess-pred-1.gif)
 
 ## **Kernels**
 
@@ -33,7 +24,7 @@ Here are few kernel functions with their corresponding graph:
 1.   The Gaussian Kernel
 
 $$ K(x):=\frac{1}{2\pi}e^{-\frac{1}{2}x^2} $$
-![Gaussian Kernel](images/gaussian.png "Gaussian Kernel")
+![Gaussian Kernel](./images/gaussian.png "Gaussian Kernel")
 
 2.   The Tricubic Kernel
 
@@ -42,7 +33,7 @@ $$ K(x):=\begin{cases}
 0 \;\;\; \text{otherwise}
 \end{cases}
 $$
-![Tricubic Kernel](images/tricubic.png "Tricubic Kernel")
+![Tricubic Kernel](./images/tricubic.png "Tricubic Kernel")
 
 3.   The Epanechnikov Kernel
 
@@ -51,7 +42,7 @@ $$ K(x):=\begin{cases}
 0 \;\;\; \text{otherwise}
 \end{cases}
 $$
-![Epanechnikov Kernel](images/epanechnikov.png "Epanechnikov Kernel")
+![Epanechnikov Kernel](./images/epanechnikov.png "Epanechnikov Kernel")
 
 4.   The Quartic Kernel
 
@@ -60,7 +51,7 @@ $$ K(x):=\begin{cases}
 0 \;\;\; \text{otherwise}
 \end{cases}
 $$
-![Quartic Kernel](images/quartic.png "Quartic Kernel")
+![Quartic Kernel](./images/quartic.png "Quartic Kernel")
 
 The kernel function is passed the data x and tau, a hyperparameter referred to as the bandwidth, and outputs the weights for the data x.
 
@@ -96,4 +87,3 @@ def lowess(x, y, kern, tau=0.05):
 ```
 
 ## **Testing**
-<!--  -->
