@@ -5,7 +5,7 @@
 The main idea behind locally weighted regression (lowess) is to use traditional linear regression on nonlinear data but introduce another weights matrix into the equation to weight data points closer to data points as more than farther away points. 
 
 Linear regression equation: 
-$$\large y = X\cdot\beta +\sigma\epsilon $$
+$$\large y = X\cdot\beta +\sigma\epsilon$$
 
 Locally weighted regression equation:
 $$\large \text{diag}(W(i))y = \text{diag}(W(i))X\cdot\beta +\sigma \text{diag}(W(i))\epsilon $$
