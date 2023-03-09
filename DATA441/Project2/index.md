@@ -53,7 +53,7 @@ def lowessag_md(xtrain, ytrain, xtest, f=2/3, iter=3, intercept=True):
   delta = np.ones(n)
   for iteration in range(iter):
     for i in range(n):
-      W = np.diag(w[:,i])
+      W = delta * np.diag(w[:,i])
       b = np.transpose(x1).dot(W).dot(ytrain)
       A = np.transpose(x1).dot(W).dot(x1)
       A = A + 0.0001*np.eye(x1.shape[1]) # if we want L2 regularization
