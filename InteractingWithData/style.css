@@ -1,0 +1,27 @@
+p {
+    font-family: 'Helvetica';
+    font-size: medium;
+    font-weight: 100;
+    text-align: center;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+div > iframe {
+    width: 100%;
+    text-align: center;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
