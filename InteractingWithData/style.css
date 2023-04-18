@@ -5,23 +5,15 @@ p {
     text-align: center;
 }
 
-/* div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-} */
+body {
+    background-color: lightblue;
+}
+
 div > iframe {
     width: 100%;
     text-align: center;
 }
 
-.full-width {
-    width: 100%;
+.width66 {
+    width: 66%;
 }
-
-.invisible {
-    visibility: hidden;
-}
-
